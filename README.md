@@ -25,22 +25,22 @@ When using more number of Syncfusion controls in an application, to make the pro
 
 {% highlight xaml %}
 
-<Application xmlns:base="clr-namespace:SampleBrowser.Maui.Base;assembly=SampleBrowser.Maui.Base"
-             xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Themes;assembly=Syncfusion.Maui.Core"
-             x:Class="SampleBrowser.Maui.App"
-             ...>
-<Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <!-- Theme resource dictionary -->
-                <syncTheme:SyncfusionThemeResourceDictionary VisualTheme="MaterialDark"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-</Application.Resources>
+    <Application xmlns:base="clr-namespace:SampleBrowser.Maui.Base;assembly=SampleBrowser.Maui.Base"
+                xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Themes;assembly=Syncfusion.Maui.Core"
+                x:Class="SampleBrowser.Maui.App"
+                ...>
+        <Application.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <!-- Theme resource dictionary -->
+                    <syncTheme:SyncfusionThemeResourceDictionary VisualTheme="MaterialDark"/>
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+        </Application.Resources>
 
-....
+        ....
 
-</Application>
+    </Application>
 
 {% endhighlight %}
 
