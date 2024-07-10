@@ -23,24 +23,23 @@ This resource dictionary includes keys and their corresponding color codes for a
 
 When using more number of Syncfusion controls in an application, to make the process easier for merging the control style dictionaries of the controls, the [SyncfusionThemeResourceDictionary](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Themes.SyncfusionThemeResourceDictionary.html) class has been provided for automatic merging.
 
-{% highlight xaml %}
+**XAML**
+```
+<Application xmlns:base="clr-namespace:SampleBrowser.Maui.Base;assembly=SampleBrowser.Maui.Base"
+            xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Themes;assembly=Syncfusion.Maui.Core"
+            x:Class="SampleBrowser.Maui.App"
+            ...>
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Theme resource dictionary -->
+                <syncTheme:SyncfusionThemeResourceDictionary VisualTheme="MaterialDark"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
 
-    <Application xmlns:base="clr-namespace:SampleBrowser.Maui.Base;assembly=SampleBrowser.Maui.Base"
-                xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Themes;assembly=Syncfusion.Maui.Core"
-                x:Class="SampleBrowser.Maui.App"
-                ...>
-        <Application.Resources>
-            <ResourceDictionary>
-                <ResourceDictionary.MergedDictionaries>
-                    <!-- Theme resource dictionary -->
-                    <syncTheme:SyncfusionThemeResourceDictionary VisualTheme="MaterialDark"/>
-                </ResourceDictionary.MergedDictionaries>
-            </ResourceDictionary>
-        </Application.Resources>
+    ....
 
-        ....
-
-    </Application>
-
-{% endhighlight %}
+</Application>
+```
 
